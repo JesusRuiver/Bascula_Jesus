@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="ruiz.jesus.org.bascula_jesus.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="FRUTAS"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonFresas"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fresas"
+                app:srcCompat="@drawable/fresas" />
+
+
+            <Button
+                android:id="@+id/ButtonGranada"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/granada"
+                android:cropToPadding="false"
+                android:elevation="0dp"
+                app:srcCompat="@drawable/granada" />
+
+            <Button
+                android:id="@+id/ButtonLima"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/lima"
+                app:srcCompat="@drawable/lima" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewFresas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="fresas" />
+
+            <TextView
+                android:id="@+id/textViewGranada"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="granada" />
+
+            <TextView
+                android:id="@+id/textViewLima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="lima" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonLimon"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/limon"
+                app:srcCompat="@drawable/limon" />
+
+            <Button
+                android:id="@+id/ButtonManzana"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/manzana"
+                app:srcCompat="@drawable/manzana" />
+
+            <Button
+                android:id="@+id/ButtonPlatano"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/platano"
+                app:srcCompat="@drawable/platano" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewLimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="limon" />
+
+            <TextView
+                android:id="@+id/textViewManzana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="manzana" />
+
+            <TextView
+                android:id="@+id/textViewPlatano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="platano" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PESO" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/ButtonVolverFrutas"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/volver"
+        app:srcCompat="@drawable/volver" />
+</LinearLayout>

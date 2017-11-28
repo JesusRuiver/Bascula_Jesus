@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="30dp"
+    android:orientation="vertical"
+    tools:context="ruiz.jesus.org.bascula_jesus.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="APLICACIÓN BASCULA"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+
+            <Button
+                android:id="@+id/ButtonFrutas"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/frutas_"
+                app:srcCompat="@drawable/frutas_" />
+
+
+            <Button
+                android:id="@+id/ButtonVerduras"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/verduras1"
+                android:cropToPadding="false"
+                android:elevation="0dp"
+                app:srcCompat="@drawable/verduras1" />
+
+            <Button
+                android:id="@+id/ButtonRefrescos"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/referescos"
+                app:srcCompat="@drawable/referescos" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+
+            <TextView
+                android:id="@+id/textViewFrutas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="FRUTAS" />
+
+            <TextView
+                android:id="@+id/textViewVerduras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VERDURAS" />
+
+            <TextView
+                android:id="@+id/textViewRefrescos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="REFRESCO" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/Button4"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/ticket"
+                app:srcCompat="@drawable/ticket" />
+
+            <Button
+                android:id="@+id/Button5"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:onClick="salir"
+                android:background="@drawable/salir"
+                app:srcCompat="@drawable/salir" />
+
+            <Button
+                android:id="@+id/Button6"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:onClick="cancelarCompra"
+                android:background="@drawable/cancel"
+                app:srcCompat="@drawable/cancel" />
+
+        </TableRow>
+
+    </TableLayout>
+</LinearLayout>

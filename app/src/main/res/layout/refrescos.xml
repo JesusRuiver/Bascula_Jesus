@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="ruiz.jesus.org.bascula_jesus.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="REFRESCOS"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtoncCocaCola"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/coca_cola"
+                app:srcCompat="@drawable/coca_cola" />
+
+
+            <Button
+                android:id="@+id/ButtonGFantaLimon"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fanta_limon"
+                android:cropToPadding="false"
+                android:elevation="0dp"
+                app:srcCompat="@drawable/fanta_limon" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewCocaCola"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Coca Cola" />
+
+            <TextView
+                android:id="@+id/textViewFantaLimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Fanta Limon" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonFantaNaranja"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/fanta_naranja"
+                app:srcCompat="@drawable/fanta_naranja" />
+
+            <Button
+                android:id="@+id/ButtonAgua"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/agua"
+                app:srcCompat="@drawable/agua" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewFantaNaranja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Fanta Naranja" />
+
+            <TextView
+                android:id="@+id/textViewAgua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Agua" />
+
+        </TableRow>
+
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/ButtonVolverRefrescos"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/volver"
+        app:srcCompat="@drawable/volver" />
+</LinearLayout>

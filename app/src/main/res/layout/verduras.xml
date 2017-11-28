@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="ruiz.jesus.org.bascula_jesus.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="VERDURAS"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:stretchColumns="*">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonBerenjena"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/berenejena"
+                app:srcCompat="@drawable/berenejena" />
+
+
+            <Button
+                android:id="@+id/ButtonCalabacin"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/calabacin"
+                android:cropToPadding="false"
+                android:elevation="0dp"
+                app:srcCompat="@drawable/calabacin" />
+
+            <Button
+                android:id="@+id/ButtonGuindilla"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/guindilla"
+                app:srcCompat="@drawable/guindilla" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewBerenjena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Berenjena" />
+
+            <TextView
+                android:id="@+id/textViewCalabacin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Calabacin" />
+
+            <TextView
+                android:id="@+id/textViewGuindilla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Guindilla" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonPimientoRojo"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/pimiento_rojo"
+                app:srcCompat="@drawable/pimiento_rojo" />
+
+            <Button
+                android:id="@+id/ButtonTomate"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tomate"
+                app:srcCompat="@drawable/tomate" />
+
+            <Button
+                android:id="@+id/ButtonTomateEnRama"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/tomate_rama"
+                app:srcCompat="@drawable/tomate_rama" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewLimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Pimiento Rojo" />
+
+            <TextView
+                android:id="@+id/textViewManzana"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tomate" />
+
+            <TextView
+                android:id="@+id/textViewPlatano"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tomate en rama" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/ButtonZanahoria"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:background="@drawable/zanahoria"
+                app:srcCompat="@drawable/zanahoria" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewZanahoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Zanahoria" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textViewPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="PESO" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/ButtonVolverVerduras"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="@drawable/volver"
+        android:onClick="volver"
+        app:srcCompat="@drawable/volver" />
+</LinearLayout>
