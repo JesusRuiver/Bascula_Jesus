@@ -27,7 +27,7 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
 
     @Override
     public MiAdaptador.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = inflador.inflate(R.layout.elemento_lista,parent,false);
+        View v = inflador.inflate(R.layout.lista,parent,false);
         return new ViewHolder(v);
     }
 

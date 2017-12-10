@@ -29,6 +29,9 @@
             android:name=".Compra"
             android:label="compra"
             android:theme="@android:style/Theme.Dialog"/>
+        <activity android:name=".Info" />
+        <activity android:name=".Ticket"/>
+
     </application>
 
 </manifest>
