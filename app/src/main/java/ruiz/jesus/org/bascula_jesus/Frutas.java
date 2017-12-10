@@ -30,6 +30,8 @@ public class Frutas extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.frutas);
 
+        texto = (EditText) findViewById(R.id.editText);
+
         bVolver = (Button) findViewById(R.id.ButtonVolverFrutas);
         bVolver.setOnClickListener(new View.OnClickListener() {
             @Override
