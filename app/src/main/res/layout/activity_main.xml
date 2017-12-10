@@ -83,26 +83,26 @@
         <TableRow>
 
             <Button
-                android:id="@+id/Button4"
+                android:id="@+id/ButtonTicket"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
                 android:background="@drawable/ticket"
                 app:srcCompat="@drawable/ticket" />
 
             <Button
-                android:id="@+id/Button5"
+                android:id="@+id/ButtonExit"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
-                android:onClick="salir"
                 android:background="@drawable/salir"
+                android:onClick="salir"
                 app:srcCompat="@drawable/salir" />
 
             <Button
-                android:id="@+id/Button6"
+                android:id="@+id/ButtonCancel"
                 android:layout_width="40dp"
                 android:layout_height="50dp"
-                android:onClick="cancelarCompra"
                 android:background="@drawable/cancel"
+                android:onClick="cancelarCompra"
                 app:srcCompat="@drawable/cancel" />
 
         </TableRow>

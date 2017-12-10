@@ -16,67 +16,75 @@ public class MainActivity extends Activity {
     private Button bFrutas;
     private Button bRefrescos;
     private Button bVerduras;
+    private Button bTicket;
+    private Button bSalir;
+    private Button bCancelar;
 
     public MainActivity getThis()
     {
         return this;
     }
 
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        bTicket = (Button) findViewById(R.id.ButtonTicket);
+        bSalir = (Button) findViewById(R.id.ButtonExit);
+        bCancelar = (Button) findViewById(R.id.ButtonCancel);
+
+        bTicket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentTicket = new Intent(getThis(), Ticket.class);
+                startActivity(intentTicket);
+            }
+        });
+
+
         bFrutas = (Button) findViewById(R.id.ButtonFrutas);
+        bVerduras = (Button) findViewById(R.id.ButtonVerduras);
+        bRefrescos = (Button) findViewById(R.id.ButtonRefrescos);
+
+        final Intent intentFrutas = new Intent(this, Frutas.class);
+        final Intent intentVerduras = new Intent(this, Verduras.class);
+        final Intent intentRefresco = new Intent(this, Refrescos.class);
+
         bFrutas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lanzarFrutas(null);
+                startActivityForResult(intentFrutas,1);
             }
         });
-
-        bRefrescos = (Button) findViewById(R.id.ButtonRefrescos);
-        bRefrescos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                lanzarRefrescos(null);
-            }
-        });
-
-        bVerduras = (Button) findViewById(R.id.ButtonVerduras);
         bVerduras.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                lanzarVerduras(null);
+                startActivityForResult(intentVerduras,1);
+            }
+        });
+        bRefrescos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivityForResult(intentRefresco,1);
+            }
+        });
+
+        bCancelar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                elementos = new ArrayList<Elemento>();
+            }
+        });
+        bSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
             }
         });
 
 
     }
 
-    public void lanzarFrutas(View view) {
-        Intent i = new Intent(this, Frutas.class);
-        startActivity(i);
-    }
-
-    public void lanzarRefrescos(View view) {
-        Intent i = new Intent(this, Refrescos.class);
-        startActivity(i);
-    }
-
-    public void lanzarVerduras(View view) {
-        Intent i = new Intent(this, Verduras.class);
-        startActivity(i);
-    }
-
-    public void salir(View view) {
-        finish();
-    }
-
-    public void cancelarCompra(View view) {
-        Intent i = new Intent(this, Compra.class);
-        startActivity(i);
-    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
