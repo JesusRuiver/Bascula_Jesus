@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 /**
- * Created by JesúsRuiver on 10/12/2017.
+ * Created by Jesús Manuel Ruiz Verdejo on 10/12/2017.
  */
 
 public class Info extends AppCompatActivity {

@@ -6,7 +6,7 @@ import android.os.Bundle;
 import java.util.Vector;
 
 /**
- * Created by Vespertino on 28/11/2017.
+ * Created by Jesús Manuel Ruiz Verdejo on 28/11/2017.
  */
 
 public class Compra extends Activity{

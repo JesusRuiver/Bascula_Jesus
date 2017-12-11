@@ -10,7 +10,7 @@ import android.widget.EditText;
 import java.util.ArrayList;
 
 /**
- * Created by Vespertino on 28/11/2017.
+ * Created by Jesús Manuel Ruiz Verdejo on 28/11/2017.
  */
 
 public class Verduras extends Activity {

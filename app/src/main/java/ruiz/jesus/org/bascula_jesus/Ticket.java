@@ -6,7 +6,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 /**
- * Created by Vespertino on 28/11/2017.
+ * Created by Jesús Manuel Ruiz Verdejo on 28/11/2017.
  */
 
 public class Ticket extends AppCompatActivity {

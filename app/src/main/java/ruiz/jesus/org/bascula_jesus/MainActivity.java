@@ -9,6 +9,11 @@ import android.widget.Button;
 
 import java.util.ArrayList;
 
+
+/**
+ * Created by Jesús Manuel Ruiz Verdejo on 10/12/2017.
+ */
+
 public class MainActivity extends Activity {
 
     public static ArrayList<Elemento> elementos = new ArrayList<Elemento>();
@@ -73,6 +78,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 elementos = new ArrayList<Elemento>();
+
             }
         });
         bSalir.setOnClickListener(new View.OnClickListener() {
@@ -83,6 +89,11 @@ public class MainActivity extends Activity {
         });
 
 
+    }
+
+    public void lanzarMensajeCompra (View view){
+        Intent i = new Intent (this, Compra.class);
+        startActivity(i);
     }
 
 
