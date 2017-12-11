@@ -40,7 +40,7 @@ public class Refrescos extends Activity{
             @Override
             public void onClick(View view) {
                 ArrayList<String> datos = new ArrayList<String>();
-                datos.add("cocacola");
+                datos.add("Coca Cola");
                 datos.add("1");
                 datos.add("Refresco");
                 datos.add(String.valueOf(R.drawable.coca_cola));
@@ -53,10 +53,10 @@ public class Refrescos extends Activity{
             @Override
             public void onClick(View view) {
                 ArrayList<String> datos = new ArrayList<String>();
-                datos.add("cocacola");
+                datos.add("Fanta Limón");
                 datos.add("1");
                 datos.add("Refresco");
-                datos.add(String.valueOf(R.drawable.coca_cola));
+                datos.add(String.valueOf(R.drawable.fanta_limon));
                 resultado(datos);
             }
         });
@@ -66,10 +66,10 @@ public class Refrescos extends Activity{
             @Override
             public void onClick(View view) {
                 ArrayList<String> datos = new ArrayList<String>();
-                datos.add("cocacola");
+                datos.add("Fanta Naranja");
                 datos.add("1");
                 datos.add("Refresco");
-                datos.add(String.valueOf(R.drawable.coca_cola));
+                datos.add(String.valueOf(R.drawable.fanta_naranja));
                 resultado(datos);
             }
         });
@@ -79,10 +79,10 @@ public class Refrescos extends Activity{
             @Override
             public void onClick(View view) {
                 ArrayList<String> datos = new ArrayList<String>();
-                datos.add("cocacola");
+                datos.add("Agua");
                 datos.add("1");
                 datos.add("Refresco");
-                datos.add(String.valueOf(R.drawable.coca_cola));
+                datos.add(String.valueOf(R.drawable.agua));
                 resultado(datos);
             }
         });

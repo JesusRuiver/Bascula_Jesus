@@ -79,7 +79,7 @@ public class Verduras extends Activity {
                     datos.add("calabacin");
                     datos.add(texto.getText().toString());
                     datos.add("Verdura");
-                    datos.add(String.valueOf(R.drawable.berenejena));
+                    datos.add(String.valueOf(R.drawable.calabacin));
                     resultado(datos);
                 }catch (Exception e)
                 {
@@ -103,7 +103,7 @@ public class Verduras extends Activity {
                     datos.add("guindilla");
                     datos.add(texto.getText().toString());
                     datos.add("Verdura");
-                    datos.add(String.valueOf(R.drawable.berenejena));
+                    datos.add(String.valueOf(R.drawable.guindilla));
                     resultado(datos);
                 }catch (Exception e)
                 {
@@ -127,7 +127,7 @@ public class Verduras extends Activity {
                     datos.add("pimiento rojo");
                     datos.add(texto.getText().toString());
                     datos.add("Verdura");
-                    datos.add(String.valueOf(R.drawable.berenejena));
+                    datos.add(String.valueOf(R.drawable.pimiento_rojo));
                     resultado(datos);
                 }catch (Exception e)
                 {
@@ -151,7 +151,7 @@ public class Verduras extends Activity {
                     datos.add("tomate");
                     datos.add(texto.getText().toString());
                     datos.add("Verdura");
-                    datos.add(String.valueOf(R.drawable.berenejena));
+                    datos.add(String.valueOf(R.drawable.tomate));
                     resultado(datos);
                 }catch (Exception e)
                 {
@@ -175,7 +175,7 @@ public class Verduras extends Activity {
                     datos.add("tomate en rama");
                     datos.add(texto.getText().toString());
                     datos.add("Verdura");
-                    datos.add(String.valueOf(R.drawable.berenejena));
+                    datos.add(String.valueOf(R.drawable.tomate_rama));
                     resultado(datos);
                 }catch (Exception e)
                 {
@@ -199,7 +199,7 @@ public class Verduras extends Activity {
                     datos.add("zanahoria");
                     datos.add(texto.getText().toString());
                     datos.add("Verdura");
-                    datos.add(String.valueOf(R.drawable.berenejena));
+                    datos.add(String.valueOf(R.drawable.zanahoria));
                     resultado(datos);
                 }catch (Exception e)
                 {

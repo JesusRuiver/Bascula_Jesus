@@ -27,7 +27,7 @@
                 android:id="@+id/Menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Menu" />
+                android:text="Volver al Menu" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -36,7 +36,7 @@
                 android:id="@+id/seguir"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Seguir" />
+                android:text="Continuar Comprando" />
         </TableRow>
     </TableLayout>
 </LinearLayout>

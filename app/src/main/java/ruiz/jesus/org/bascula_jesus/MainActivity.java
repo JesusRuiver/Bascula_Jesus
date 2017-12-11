@@ -91,12 +91,6 @@ public class MainActivity extends Activity {
 
     }
 
-    public void lanzarMensajeCompra (View view){
-        Intent i = new Intent (this, Compra.class);
-        startActivity(i);
-    }
-
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
