@@ -2,7 +2,6 @@ package ruiz.jesus.org.bascula_jesus;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    public static ArrayList<Elemento> elementos = new ArrayList<Elemento>();
+    public static ArrayList<Articulo> articulos = new ArrayList<Articulo>();
 
     private Button bFrutas;
     private Button bRefrescos;
@@ -77,7 +76,9 @@ public class MainActivity extends Activity {
         bCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                elementos = new ArrayList<Elemento>();
+
+                articulos = new ArrayList<Articulo>();
+                lanzarCancelaCompra(null);
 
             }
         });
@@ -94,7 +95,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-        Intent intentPregunta = new Intent(this, Info.class);
+        Intent intentPregunta = new Intent(this, ContinuarCompra.class);
 
         //lanzaFruta
         if (requestCode == 1111 && resultCode == RESULT_OK) {
@@ -121,8 +122,8 @@ public class MainActivity extends Activity {
             String cantidad = datos.get(1);
             String origen = datos.get(2);
 
-            Elemento elemento = new Elemento(Integer.parseInt(idFoto.trim()), nombre, Double.parseDouble(cantidad.trim()));
-            elementos.add(elemento);
+            Articulo articulo = new Articulo(Integer.parseInt(idFoto.trim()), nombre, Double.parseDouble(cantidad.trim()));
+            articulos.add(articulo);
 
 
             intentPregunta.putExtra("origen", origen);
@@ -145,6 +146,9 @@ public class MainActivity extends Activity {
                     break;
             }
         }
-
+    }
+    public void lanzarCancelaCompra(View view){
+        Intent i = new Intent(this, CancelaCompra.class);
+        startActivity(i);
     }
 }

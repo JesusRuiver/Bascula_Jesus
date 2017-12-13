@@ -4,14 +4,14 @@ package ruiz.jesus.org.bascula_jesus;
  * Created by Jesús Manuel Ruiz Verdejo on 10/12/2017.
  */
 
-public class Elemento {
+public class Articulo {
 
     int idFoto;
     String nombre;
     double cantidad;
 
 
-    public Elemento(int idFoto,String nombre,double cantidad)
+    public Articulo(int idFoto, String nombre, double cantidad)
     {
         this.idFoto = idFoto ;
         this.nombre = nombre;

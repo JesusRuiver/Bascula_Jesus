@@ -9,7 +9,7 @@ import java.util.Vector;
  * Created by Jesús Manuel Ruiz Verdejo on 28/11/2017.
  */
 
-public class Compra extends Activity{
+public class CancelaCompra extends Activity{
 
 
     @Override public void onCreate(Bundle savedInstanceState){

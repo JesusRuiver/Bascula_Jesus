@@ -10,25 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingBottom="50dp"
-        android:text="Esta seguro que desea cancelar la compra"
+        android:text="La compra ha sido cancelada"
         android:textSize="14sp" />
-
-    <RadioButton
-        android:id="@+id/radioButtonSi"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Si" />
-
-    <RadioButton
-        android:id="@+id/radioButtonNo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="No" />
-
-    <Button
-        android:id="@+id/buttonConfirmar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Confirmar" />
 
 </LinearLayout>

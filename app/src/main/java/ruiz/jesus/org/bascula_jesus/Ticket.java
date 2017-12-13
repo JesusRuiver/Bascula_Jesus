@@ -19,7 +19,7 @@ public class Ticket extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ticket);
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
-        adaptador = new MiAdaptador(this,MainActivity.elementos);
+        adaptador = new MiAdaptador(this,MainActivity.articulos);
         recyclerView.setAdapter(adaptador);
         layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);

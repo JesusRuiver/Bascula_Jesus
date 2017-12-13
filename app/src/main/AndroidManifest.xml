@@ -26,10 +26,10 @@
             android:name=".Verduras"
             android:label="verduras" />
         <activity
-            android:name=".Compra"
+            android:name=".CancelaCompra"
             android:label="compra"
             android:theme="@android:style/Theme.Dialog"/>
-        <activity android:name=".Info"/>
+        <activity android:name=".ContinuarCompra"/>
         <activity android:name=".Ticket"/>
 
     </application>

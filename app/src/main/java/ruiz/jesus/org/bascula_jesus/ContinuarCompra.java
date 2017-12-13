@@ -11,11 +11,11 @@ import android.widget.TextView;
  * Created by Jesús Manuel Ruiz Verdejo on 10/12/2017.
  */
 
-public class Info extends AppCompatActivity {
+public class ContinuarCompra extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info);
+        setContentView(R.layout.continuar_comprando);
 
         Bundle extras = getIntent().getExtras();
         String nombre = extras.getString("nombre");
@@ -27,8 +27,8 @@ public class Info extends AppCompatActivity {
         texto.setText("Añadidos " + cantidad + " de " + nombre);
 
 
-        final Button seguir = (Button) findViewById(R.id.seguir);
-        final Button menu = (Button) findViewById(R.id.Menu);
+        final Button seguir = (Button) findViewById(R.id.continuaCompra);
+        final Button menu = (Button) findViewById(R.id.volverMenu);
 
 
         seguir.setOnClickListener(new View.OnClickListener() {

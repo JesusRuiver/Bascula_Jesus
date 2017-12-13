@@ -17,11 +17,11 @@ import java.util.ArrayList;
 public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
 
     LayoutInflater inflador;
-    ArrayList<Elemento> elementos = new ArrayList<Elemento>();
+    ArrayList<Articulo> articulos = new ArrayList<Articulo>();
 
-    public MiAdaptador(Context context, ArrayList<Elemento> elementos )
+    public MiAdaptador(Context context, ArrayList<Articulo> articulos)
     {
-        this.elementos = elementos;
+        this.articulos = articulos;
         inflador = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -33,14 +33,14 @@ public class MiAdaptador extends RecyclerView.Adapter<MiAdaptador.ViewHolder> {
 
     @Override
     public void onBindViewHolder(MiAdaptador.ViewHolder holder, int position) {
-        holder.titulo.setText(elementos.get(position).nombre.toString());
-        holder.subtitulo.setText(String.valueOf(elementos.get(position).cantidad));
-        holder.imageView.setImageResource(elementos.get(position).idFoto);
+        holder.titulo.setText(articulos.get(position).nombre.toString());
+        holder.subtitulo.setText(String.valueOf(articulos.get(position).cantidad));
+        holder.imageView.setImageResource(articulos.get(position).idFoto);
     }
 
     @Override
     public int getItemCount() {
-        return elementos.size();
+        return articulos.size();
     }
 
 
